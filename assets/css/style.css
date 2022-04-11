@@ -2823,13 +2823,16 @@ table.bdr {
 }
 .comparison-table table td ,.comparison-table table th{
     border: 2px solid white;
+    
 }
 
  
 .comparison-table table thead tr:nth-of-type(1){    
     background: #cfe2ff;
     color: #084298;
+    /* text-transform: uppercase; */
     font-weight: 600;
+    font-size: 13px;
     
 }
 .comparison-table table tbody tr:nth-child(1){   
