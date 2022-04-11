@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">   
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Raise Ticket</title>
+  </head>
+  <body>
+
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    INTEGRATED TICKET MANAGEMENT SYSTEM
+                </div>
+                <div class="col-sm-6">
+                    <ul class="login-section">
+                        <li><a href="">Admin Login</a></li>
+                        <li><a href="">Raise Ticket</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="mt-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+
+                        <div class="card box-shadow">
+                            <div class="card-header bg-darkblue">
+                                <ul class="headerTitle text-white">
+                                    <li>RCH</li>
+                                    <li>Raise Ticket</li>
+                                </ul>                                
+                            </div>
+
+                            <div class="card-body">
+                                <ul class="send-otp">
+                                    <li>
+                                        <label for="Mobile number" class="fw-bold">Mobile Number</label>
+                                        <input type="text" class="form-control form-control-sm" id="mobileNumber" placeholder="Enter mobile number">   
+                                    </li>
+                                    <li id="sendotp">
+                                        <div class="d-inline-block">
+                                            <label for="Mobile number" class="fw-bold">OTP</label>
+                                            <input type="text" class="form-control form-control-sm" id="mobileNumber" placeholder=""> 
+                                        </div> 
+                                        <button type="button" class="btn btn-sm btn-orange">Verify OTP</button>
+                                        <button type="button" class="btn btn-sm btn-orange">Resend OTP</button>
+                                        <button type="button" class="btn btn-sm btn-orange userlist">Submit</button>
+
+                                    </li>
+                                </ul>
+                                <div class="clearfix"></div>
+
+                                <div id="userlist" class="table-responsive">
+                                    <table class="mt-2 table table-striped table-sm table-bordered table-info">
+                                        <caption class="caption">User list</caption>
+                                        <thead>
+                                            <tr>
+                                                <th>Text 1</th>
+                                                <th>Text 2</th>
+                                                <th>Text 3</th>
+                                                <th>Text 4</th>
+                                                <th>Text 5</th>
+                                            </tr>
+                                        </thead>
+                                        <thead>
+                                            <tr>
+                                                <td>Text 1</td>
+                                                <td>2</td>
+                                                <td>3</td>
+                                                <td>4</td>
+                                                <td><a href="#" class="link-primary ">Primary link</a></td>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+
+
+                             
+                               
+                              
+                            </div>
+                        </div>
+
+                        <div class="card box-shadow riseTicket pad0">
+                            <div class="card-heading bg-darkblue text-center text-white">
+                                Ticket List <a class="btn btn-sm btn-primary divaction">Raise ticket</a>
+                            </div>
+                            <div class="card-body ">                               
+                                <div class="clearfix"></div>  
+                                <table class="mt-2 table table-striped table-sm table-bordered table-info">                                   
+                                    <thead>
+                                        <tr>
+                                            <th>Text 1</th>
+                                            <th>Text 2</th>
+                                            <th>Text 3</th>
+                                            <th>Text 4</th>
+                                            <th>Text 5</th>
+                                        </tr>
+                                    </thead>
+                                   
+                                </table>
+                                <nav aria-label="...">
+                                    <ul class="pagination pagination-sm justify-content-center">
+                                      <li class="page-item active" aria-current="page">
+                                        <span class="page-link">1</span>
+                                      </li>
+                                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    </ul>
+                                  </nav>                            
+                            </div>
+                        </div>
+
+
+                        <div class="card box-shadow detailTicket">
+                            <div class="card-heading bg-darkblue text-center text-white">Ticket Detail</div>
+                            <div class="card-body">  
+                                <div class="row mb-2">
+                                    <div class="customRadio"><label class="fw-bold">Ticket type  &nbsp;&nbsp;&nbsp;</label>
+                                        <input type="radio" id="age1" name="age" value="30">
+                                        <label for="age1">Error </label>
+                                        <input type="radio" id="age2" name="age" value="60">
+                                        <label for="age2">New Requirement </label>  
+                                        <input type="radio" id="age3" name="age" value="100">
+                                        <label for="age3">Change Request </label>                                       
+                                        <input type="radio" id="age4" name="age" value="100">
+                                        <label for="age3">Slowness  </label>
+                                        <input type="radio" id="age5" name="age" value="100">
+                                        <label for="age3">Functional </label>
+                                    </div>
+                                    
+                                </div> 
+                                
+                                <div class="row mb-2">
+                                    <div class="col">
+                                        <label class="form-label fw-bold">Module</label>
+                                        <select class="form-select form-select-sm" aria-label="Select">
+                                            <option selected>Select</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                      </div>
+                                      <div class="col">
+                                        <label class="form-label fw-bold">Sub Module</label>
+                                        <select class="form-select form-select-sm" aria-label="Select">
+                                            <option selected>Select</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                      </div>
+                                      <div class="col">
+                                        <label class="form-label fw-bold">Form </label>
+                                        <select class="form-select form-select-sm" aria-label="Select">
+                                            <option selected>Select</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                      </div> 
+                                </div>
+
+                                <div class="row mb-2">
+                                    <div class="col">
+                                        <label class="form-label fw-bold">Issue </label>
+                                        <textarea class="form-control" rows="3"></textarea>
+                                    </div>
+                                    <div class="col">
+                                        <label class="form-label fw-bold">Remarks</label>
+                                        <textarea class="form-control" rows="3"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <label class="form-label fw-bold">Upload documents </label>
+                                    <input  type="file" id="formFile">
+                                </div>
+
+                                <div class="w-100 text-center py-2">
+                                    <button type="button" class="btn btn-sm btn-orange">Submit </button>
+                                    <button type="button" class="btn btn-sm btn-primary">Reset </button>
+                                </div>
+                                                   
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="footer bg-darkblue">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class="text-white">Site is designed and hosted by National Informatics Centre (NIC)</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+        $( document ).ready(function() {
+            console.log( "ready!" );
+            // function placeFooter() {
+            //     if( $('.footer').height() < $(window).height() ) {
+            //       $(".footer").css({position: "absolute", bottom:"0px"});
+            //     } else {
+            //       $(".footer").css({position: ""});
+            //     }
+            //   }            
+            //   placeFooter();
+        });  
+
+        $(document).ready(function() {
+            $("#mobileNumber").keyup(function() {
+                var x = document.getElementById('sendotp');
+                if($(this).val() == 10) {
+                x.style.display = 'none';
+                } else {
+                x.style.display = 'inline-block';
+                }
+            });
+            $('.detailTicket').hide();
+            $('.divaction').click(function() {
+                $('.detailTicket').show(200);
+                $('html,body').animate({
+                    scrollTop: $(".detailTicket").offset().top},'slow');
+                // $('.Show').hide(0);
+                // $('.Hide').show(0);
+            });
+            $('.riseTicket').hide();
+            $('.link-primary').click(function() {
+                $('.riseTicket').show(200);
+                
+            });
+            $('#userlist').hide();
+            $('.userlist').click(function() {
+                $('#userlist').show(200);
+                
+            });
+
+            
+
+
+            });
+        </script>
+  </body>
+</html>
