@@ -2233,8 +2233,6 @@ ul.image-link li{
 	transform: translate3d(0,-6px,0);
 }
 /* END ANIMATED MINUS */
-
-
 ul.userDetails{
     margin: 0;
     padding: 0;
@@ -2245,23 +2243,17 @@ ul.userDetails{
     flex-wrap: wrap;
     font-size: 13px;
 }
-
-ul.userDetails li{
-    
+ul.userDetails li{    
     display: inline-block;
 }
-
 ul.userDetails li:nth-of-type(odd){
    font-weight: 600;
    padding-right: 5px;
    color:#2caee2;
    font-size: 14px;
    text-transform: uppercase;
-   letter-spacing: 0.5px;
-  
-
+   letter-spacing: 0.5px; 
 }
-
 ul.userDetails li:nth-of-type(even){
     padding-right: 10px;
     color: #01004C;
