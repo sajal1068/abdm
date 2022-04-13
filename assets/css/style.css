@@ -54,7 +54,7 @@
   }
 ::-webkit-scrollbar
 {
-	width: 5px;
+	width: 8px;
 	height: 5px;
 }
 ::-webkit-scrollbar-track
@@ -65,6 +65,7 @@
 ::-webkit-scrollbar-thumb
 {
 	background: #AC003A;
+    background: #2258BF;
 	border-radius: 10px;
 }
 /* Handle on hover */
@@ -2849,19 +2850,24 @@ table.bdr {
 .comparison-table table thead tr:nth-of-type(1){    
     background: #cfe2ff;
     color: #084298;
+    background: #2258BF;    
+    color: #fff;
     /* text-transform: uppercase; */
     font-weight: 600;
     font-size: 13px;
     
 }
-.comparison-table table tbody tr:nth-child(1) th{   
+.comparison-table table tbody tr th{   
     background: #cff4fc;
     /* color: #055160;
     color: #001418; */
     color: #01938d;
     border-color: #fff;
+
+    background: #00bcd4;
+    color:#fff;
 }
-.comparison-table table tbody tr:nth-child(2) td{    
+/* .comparison-table table tbody tr:nth-child(2) td{    
     background: #f2f2f2;
    
 }
@@ -2875,16 +2881,26 @@ table.bdr {
     background: #fff3cd;
     background: #f1e0a9;
     color: #664d03;
-}
+} */
 .comparison-table table tr td:nth-child(7){    
     background: #f8d7da;
     color: #842029;  
     font-weight: 600;  
 }
-.comparison-table table tbody tr:nth-child(4){    
+.comparison-table table tbody tr:nth-child(4) td{    
     background-color: #ffeedf;
     color: #ffa755;
     color:#e77104;
+
+    background-color: #2258bf;
+    color:#fff;
+}
+
+.comparison-table table tbody tr td{
+    background: #cfe2ff;
+    color: #084298;
+    /* background: rgba(0, 127, 255,0.5);
+    color: #0344ed; */
 }
 
 /* .comparison-table table tr td:nth-child(4),.comparison-table table tbody tr td:nth-child(4) {    
@@ -2893,17 +2909,21 @@ table.bdr {
 } */
 
 .comparison-table table  td.td-error{
-      background:#f8d7da;
-      color:red;  
+      background:#f8d7da!important;
+      color:red!important;  
       font-weight: 600;
-      letter-spacing: 0.5px;    
+      letter-spacing: 0.15px;    
+      font-size: 14px;
+      text-transform: uppercase;
   }
 
   td.td-success{
-    background: #d1e7dd;
-    color: green;
+    background: #d1e7dd!important;
+    color: green!important;
     font-weight: 600;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.15px;
+    font-size: 14px;
+    text-transform: uppercase;
 }
 
 

@@ -457,7 +457,7 @@
       <!-- popup section -->
       <!-- Modal -->
       <div class="modal fade abha-creation" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-         <div class="modal-dialog modal-dialog-centered modal-lg">
+         <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
             <div class="modal-content position-relative">
                <section id="loader-section">
                   <div class="loader-section">
@@ -525,7 +525,7 @@
                            <div class="p-1 text-center">
 
                               <ul class="inline-form">
-                                 <li><h6>Please enter the one time password  to verify your account</h6></li>
+                                 <li><h6>Enter the OTP</h6></li>
                                  <li>
                                     <div> <span>A code has been sent to</span> <small>*******9897</small> </div>
                               <div id="otp" class="inputs d-flex flex-row justify-content-center mt-2"> 
@@ -630,7 +630,7 @@
                      <div class="table-responsive">
 
                      
-                    <table class="table table-sm table-bordered align-middle table-striped"  id="mytable">
+                    <table class="table table-sm table-bordered align-middle"  id="mytable">
                       <thead>
                         <tr>
                           <th class="text-nowrap">Data Comparison</th>
@@ -662,16 +662,16 @@
                         <tr class="align-middle">
                           <th>Score</th>
                           <td class="text-center">
-                             <img src="assets/images/close-icon.png"><span class="d-block mt-1">(0%)</span>
+                             <img src="assets/images/close-icon.png"><span class="d-block mt-1"></span>
                           </td>
-                          <td class="text-center"><img src="assets/images/close-icon.png"><span class="d-block mt-1">(0%)</span></td>
-                          <td class="text-center"><img src="assets/images/right-icon.png"><span class="d-block">(100%)</span></td>
-                          <td class="text-center"><img src="assets/images/close-icon.png"><span class="d-block mt-1">(0%)</span></td>
-                          <td class="text-center"><img src="assets/images/right-icon.png"><span class="d-block mt-1">(100%)</span></td>
+                          <td class="text-center"><img src="assets/images/close-icon.png"><span class="">(0%)</span></td>
+                          <td class="text-center"><img src="assets/images/right-icon.png"><span class="d-block"></span></td>
+                          <td class="text-center"><img src="assets/images/close-icon.png"><span class="d-block mt-1"></span></td>
+                          <td class="text-center"><img src="assets/images/right-icon.png"><span class="d-block mt-1"></span></td>
                         </tr> 
                         <tr class="actionclass">
-                           <th>Result</th>
-                           <td colspan="5" class="text-center">Not Matched</td>
+                           <td>Result</td>
+                           <td colspan="5" class="text-center">Matched</td>
                         </tr>                        
                       </tbody>
                    </table>
@@ -680,7 +680,7 @@
                     <button class="btn-rounded">Back</button>
                     <button class="btn-rounded">Submit</button>
                  </div> 
-                   <div class="border border-danger w-100 text-center text-danger py-1">
+                   <div id="mydiv" class="border border-danger w-100 text-center text-danger py-1">
                       RCH ID and ABHA data are not matched, hence can not be linked.
                    </div>
                   </section>
@@ -736,8 +736,17 @@
                $(".comparison-table").show();
                $(".addaar-box").hide();
                $(".otp-box").hide();
-               $(".newlink").hide();               
-               $(".creatlink").hide();               
+               // $(".newlink").hide();               
+               // $(".creatlink").hide(); 
+               $(function() {
+    var target = $('#mydiv');
+    if (target.length) {
+        $('html,body').animate({
+            scrollTop: target.offset().top
+        }, 1000);
+        return false;
+    }
+});          
             });
 
 
