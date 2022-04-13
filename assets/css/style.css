@@ -897,6 +897,9 @@ li.bdrl-0 {
 .font-12 {
     font-size:12px;
 }
+.font-10 {
+    font-size:12px!important;
+}
 .font-14 {
     font-size:14px;
 }
@@ -1436,6 +1439,7 @@ p.copyright{
 	padding:5px;
 }
 
+
 @media (min-width: 992px)
 {
 	.navbar{
@@ -1492,6 +1496,10 @@ p.copyright{
 		display: block;
 		transform: scale(1);
 	}
+
+    .modal-lg, .modal-xl {
+        max-width: 950px;
+    }
 }
 
 /* hambager */
@@ -2320,7 +2328,7 @@ h2 {
         display: flex;
         align-items: center;
         float: left;
-        padding: 15px 15px;
+        padding: 5px 10px;
         border-radius: 4px;
         background: #fff;
         box-shadow: 0 20px 50px 0 rgb(28 9 80 / 7%);
@@ -2338,7 +2346,7 @@ h2 {
   .abha-content{
         width: 100%;
         float: left;
-        padding: 15px 15px;
+        padding: 5px 15px;
         border-radius: 4px;
         box-shadow: 0 20px 50px 0 rgb(28 9 80 / 7%);
         margin-top: 10px; 
@@ -2359,8 +2367,9 @@ h2 {
 }
 
 .subscribe-box {  
-    margin: 15px 0 0; 
-    padding: 15px 0;    
+    margin: 10px 0 0; 
+    width: 100%;
+    padding: 5px 0;
     background: #fff;
     box-shadow: 0 20px 50px 0 rgba(28,9,80,.07);
   }
@@ -2371,17 +2380,16 @@ h2 {
     color: #1c0950;   
   }
   .subscribe-box .subscribe {
-    width: 100%;
+    /* width: 100%;
     max-width: 400px;
-    margin: auto;
+    margin: auto; */
   }
   
   .subscribe-box .subscribe input {
     width: 100%;
     background: transparent;
     border: 0;
-    border-bottom: 2px solid #2caee2;
-    
+    border-bottom: 2px solid #2caee2;    
     padding: 1em 0 0.8em;
     padding: 5px 0px 5px;
     text-align: center;
@@ -2449,6 +2457,20 @@ h2 {
     background:#166788;
     color: #fff;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  ul.inline-form{
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+  }
+  ul.inline-form li{      
+      border:solid red 0px;
+      margin-right: 10px;
+  }
+  ul.inline-form li.input-w-200{
+      width: 200px;
+      margin: 0  15px;;
   }
 
   .subscribe-box .subscribe .button:hover{
@@ -2604,7 +2626,7 @@ h2 {
   
 /* input */
 .inputs input {
-    width: 30px;height: 30px;
+    width: 30px;height: 30px; padding: 1px;
 }
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
@@ -2629,7 +2651,7 @@ input[type=number]::-webkit-outer-spin-button {
 .card-2 .content a {
     color: red
 }
-.form-control:focus {
+.inputs .form-control:focus {
     box-shadow: none;
     border: 2px solid red
 }
@@ -2644,6 +2666,7 @@ input[type=number]::-webkit-outer-spin-button {
     background: #01004C;
     background: #166788;
     background: #435ba1;
+    padding: 0.5rem 1rem;
 }
 .text-light-blue{
     color:#2caee2
@@ -2831,19 +2854,24 @@ table.bdr {
     font-size: 13px;
     
 }
-.comparison-table table tbody tr:nth-child(1){   
+.comparison-table table tbody tr:nth-child(1) th{   
     background: #cff4fc;
     /* color: #055160;
     color: #001418; */
     color: #01938d;
     border-color: #fff;
 }
-.comparison-table table tbody tr:nth-child(2){    
+.comparison-table table tbody tr:nth-child(2) td{    
+    background: #f2f2f2;
+   
+}
+.comparison-table table tbody tr:nth-child(2) th{    
     background: #f5f0f9;
     color: #101010;
     color:#e76c25;
 }
-.comparison-table table tr:nth-child(3){    
+
+.comparison-table table tr:nth-child(3) th{    
     background: #fff3cd;
     background: #f1e0a9;
     color: #664d03;
@@ -3214,11 +3242,15 @@ background: -ms-linear-gradient(top, #FDA251, #FB8F3D);
       color:#fff;
       text-decoration: none;
   }
-
+   .abha-content h6{
+       margin: 5px 0 3px 0;
+   }
   .text-gold{
       color:#fdb603;
   }
+  .text-deepsky{
+    color:#01004c;
+  }
 
-  
-  
+ 
 /* dsahboard button */
