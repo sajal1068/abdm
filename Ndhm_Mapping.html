@@ -481,13 +481,15 @@
                            <li>
                               <h6>Enter Aadhaar Number</h6>
                            </li>                           
-                           <li class="input-w-200"> <input type="text" placeholder="Enter Aadhaar Number" autocomplete="off" maxlength="16" /></li>
+                           <li class="input-w-200"> 
+                              <input type="text" placeholder="Enter Aadhaar Number" autocomplete="off" maxlength="16" />                              
+                           </li>
                            <li>  
                               <button type="button" id="getotp" class="btn-rounded my-2"> <span>Get OTP</span></button>
                               <button type="button" id="otp" class="btn-rounded my-2"> <span>Resend OTP</span></button>
                            </li>                            
                         </ul>
-                        
+                        <div class="valid-feedback d-block">An OTP has been sent on mobile number registered with Aadhaar number.</div>
                        
                      </div>
                   </section>
@@ -570,11 +572,13 @@
                         </tr>                        
                       </tbody>
                    </table>
+                  
                   </div>
                    <div class="btn-sec w-100 text-center position-relative top-10">
                     <button class="btn-rounded">Link</button>
                     <button class="btn-rounded">Print</button>
                  </div> 
+                 <div class="valid-feedback d-block text-center">ABHA Number has been Created & Linked with RCH ID successfully.</div>
                    <div id="mydiv" class="border border-danger w-100 text-center text-danger py-1 fw-bold">
                       RCH ID and ABHA data are not matched, hence can not be linked.
                    </div>

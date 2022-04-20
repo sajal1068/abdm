@@ -3285,5 +3285,11 @@ background: -ms-linear-gradient(top, #FDA251, #FB8F3D);
     color:#01004c;
   }
 
+  .rch-report-table table thead tr:nth-of-type(1){
+        /* background: #06b7d2;
+        color:#fff;
+        font-weight: 600!important; */
+  }
+
  
 /* dsahboard button */
